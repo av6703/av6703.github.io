@@ -10,103 +10,128 @@ img {
 
 /*Styles for Mobile Layout */
 
+@media only screen and (min-width: 120px) {
 
-#container {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+	#container {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	header {
+		text-align: center;
+	}
+
+	nav {
+		font-family: Georgia, "Times New Roman", serif;
+		font-size: 1.25em;
+		font-weight: bold;
+		text-align: center;
+		margin-top: -1.5em;
+	}
+
+	nav ul {
+		padding: 0;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+
+
+	nav li {
+		background-color: #9D9D93;
+		border-radius: 2em;
+		list-style-type: none;
+		margin: 0.3em;
+		padding: 0.4em;
+	}
+
+	nav li a {
+		color: #FFFFFF;
+		text-decoration: none;	
+	}
+
+	.mobile {
+		display: inline;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+
+	main {
+		display: block;
+		background-color: #FFFFFF;
+		font-family: Verdana, Arial, sans-serif;
+		font-size: 1em;
+		margin-top: 0.5em;
+		padding: 1em;
+		border-radius: 2em 0 2em 0;
+		opacity: 0.85;
+	}
+
+	main a{
+		background-color: #9D9D93;
+		border-radius: 1em;
+		color: #FFFFFF;
+		font-weight: bold;
+		padding: 0.5em;
+		text-decoration: none;
+	}
+
+	footer {
+		font-size: .70em;
+		text-align: center;
+		margin-top: 2em;
+		color: #FFFFFF;
+	}
+
+	footer a{
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+
+	.tablet {
+		display: none;
+	}
+
+
+	.equip {
+		display: none;
+	}
+
+	aside {
+		font-style: italic;
+	}
+
+	/* Style rule for input, select, and text area form elements */
+
+	input, select, textarea {
+		display: block;
+		margin-bottom: 1em;
+	}
+
+	/* Style rule for label element */
+
+	label {
+		display: block;
+	}
+
+	/* Style rule for unordered list within a form */
+
+	form ul {
+		list-style-type: none;
+	}
+
+	/* Style rule for chkbx class */
+
+	.chkbx {
+		display: inline-block;
+	}
+
 }
-
-
-header {
-	text-align: center;
-}
-
-nav {
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: 1.25em;
-	font-weight: bold;
-	text-align: center;
-	margin-top: -1.5em;
 	
-}
-
-nav ul {
-	padding: 0;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-
-nav li {
-	background-color: #9D9D93;
-	border-radius: 2em;
-	list-style-type: none;
-	margin: 0.3em;
-	padding: 0.4em;
-}
-
-nav li a {
-	color: #FFFFFF;
-text-decoration: none;	
-}
-
-.mobile {
-	display: inline;
-}
-
-.desktop {
-	display: none;
-}
-
-
-main {
-	display: block;
-	background-color: #FFFFFF;
-	font-family: Verdana, Arial, sans-serif;
-	font-size: 1em;
-	margin-top: 0.5em;
-	padding: 1em;
-	border-radius: 2em 0 2em 0;
-	opacity: 0.85;
-}
-
-main a{
-	background-color: #9D9D93;
-	border-radius: 1em;
-	color: #FFFFFF;
-	font-weight: bold;
-	padding: 0.5em;
-	text-decoration: none;
-}
-
-footer {
-	font-size: .70em;
-	text-align: center;
-	margin-top: 2em;
-	color: #FFFFFF;
-	
-}
-
-footer a{
-	color: #FFFFFF;
-	text-decoration: none;
-	
-}
-
-.tablet {
-	display: none;
-}
-
-
-.equip {
-	display: none;
-}
-
-aside {
-	font-style: italic;
-}
-
 
 /* Tablet rules */
 
@@ -240,6 +265,54 @@ aside {
 		padding: 1.5em;
 		margin: 1em;
 	}
+	
+	/* Style for table element */
+	
+	table {
+		border: 0.1em solid #000000;
+		border-collapse: collapse;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+	
+	/* Style specifies border and padding for th and td elements */
+	
+	th, td {
+		border: 0.1em solid #000000;
+		padding: 1em;
+	}
+	
+	/* Style for th element */
+	
+	th {
+		background-color: #1D1D1C;
+		color: #FFFFFF;
+	}
+	
+	/* Style for caption element */
+	
+	caption {
+		font-size: 1.5em;
+		font-weight: bold;
+		padding-bottom: 0.5em;
+	}
+	
+	/* Style rule label element */
+	
+	label {
+		float: left;
+		padding-right: 0.5em;
+		text-align: right;
+		width: 10em;
+	}
+	
+	/* Style rule for btn class */
+	
+	.btn {
+		margin-left: 12em;
+	}
+	
 }
 
 
@@ -360,4 +433,33 @@ aside {
 	main article h2 {
 		color: #000000;
 	}
+	
+	/* Style for table element */
+	
+	table {
+		background-color: #FFFFFF;
+		width: 85%;
+	}
+	
+	/* Style for caption element */
+	
+	caption {
+		color: #FFFFFF;
+	}
+	
+	/* Style rule for form element */
+	
+	form {
+		background-color: #FFFFFF;
+		padding: 1em;
+	}
+	
+	/* Style rule for paragraph with form element */
+	
+	form p {
+		color: #000000;
+	}
+	
+	
+	
 }
